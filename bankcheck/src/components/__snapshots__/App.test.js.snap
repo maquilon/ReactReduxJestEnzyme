@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          Wallet Balance
+          Bank Account
 </h2>,
         <hr />,
         <Connect(Wallet) />,
@@ -32,10 +32,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Wallet Balance",
+          "children": "Bank Account",
         },
         "ref": null,
-        "rendered": "Wallet Balance",
+        "rendered": "Bank Account",
         "type": "h2",
       },
       Object {
@@ -67,7 +67,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Wallet Balance
+            Bank Account
 </h2>,
           <hr />,
           <Connect(Wallet) />,
@@ -80,10 +80,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Wallet Balance",
+            "children": "Bank Account",
           },
           "ref": null,
-          "rendered": "Wallet Balance",
+          "rendered": "Bank Account",
           "type": "h2",
         },
         Object {

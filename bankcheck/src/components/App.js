@@ -5,7 +5,7 @@ class App extends Component {
     render() {
         return(
             <div>
-                <h2>Wallet Balance</h2>
+                <h2>Bank Account</h2>
                 <hr />
                 <Wallet />
             </div>
