@@ -3,7 +3,6 @@ import { mount, shallow } from 'enzyme';
 import { Money } from './Money';
 
 describe('Money', () => {
-    const mockFetchbitcoin = jest.fn();
     let props = { balance: 10, bitcoin: {} }
     let money = shallow(<Money {...props} />);
 
@@ -12,6 +11,8 @@ describe('Money', () => {
     });
 
     describe('when mounted', () => {
+        const mockFetchbitcoin = jest.fn();
+
         beforeEach(() => {
             props.fetchBitcoin = mockFetchbitcoin;
             money = mount(<Money {...props} />);

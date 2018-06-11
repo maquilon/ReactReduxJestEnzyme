@@ -13,7 +13,6 @@ export class Money extends Component {
         if (Object.keys(bitcoin).length === 0) return '';
 
         return this.props.balance / parseInt(bitcoin.bpi.USD.rate.replace(',', ''), 10);
-
     }
 
     render() {
