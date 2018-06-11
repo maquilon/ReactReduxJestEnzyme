@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deposit, withdraw } from '../actions/balance';
 
-
+// The class has to be exported for testing purposesn
 export class Wallet extends Component {
     constructor() {
         super();
