@@ -11,13 +11,11 @@ describe('App', () => {
 
     it('contains a Connected Wallet component', () => {
         //console.log(app.debug());
-
         expect(app.find('Connect(Wallet)').exists()).toBe(true);
     });
 
     it('contains a connected Money component', () => {
         expect(app.find('Connect(Money)').exists()).toBe(true);
     })
-
 
 })

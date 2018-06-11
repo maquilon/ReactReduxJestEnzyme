@@ -24,6 +24,9 @@ ShallowWrapper {
         "Bitcoin balance: ",
         "",
       ],
+      "style": Object {
+        "marginTop": 50,
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -42,6 +45,9 @@ ShallowWrapper {
           "Bitcoin balance: ",
           "",
         ],
+        "style": Object {
+          "marginTop": 50,
+        },
       },
       "ref": null,
       "rendered": Array [
