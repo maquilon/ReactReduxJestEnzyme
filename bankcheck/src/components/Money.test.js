@@ -15,7 +15,7 @@ describe('Money', () => {
 
         beforeEach(() => {
             props.fetchBitcoin = mockFetchbitcoin;
-            money = mount(<Money {...props} />);
+            money = mount( <Money {...props} /> );
         })
 
         it('dispatches the `fetchBitcoin()` method it receives from props', () => {

@@ -25,4 +25,3 @@ describe('balanceReducer', () => {
         .toEqual(initialState - withdrawal);
     })
 });
-

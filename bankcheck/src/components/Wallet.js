@@ -12,7 +12,6 @@ export class Wallet extends Component {
 
     deposit = () => this.props.deposit(this.state.balance);
     withdraw = () => this.props.withdraw(this.state.balance);
-
     updateBalance = event => this.setState({ balance: parseInt(event.target.value, 10) })
 
     render() {
@@ -28,11 +27,17 @@ export class Wallet extends Component {
                         />
                     </div>
                     <div className='col-md-3'>
-                        <button className='btn-deposit btn btn-success'
-                            onClick={this.deposit}
-                        >Deposit</button>
+                        <button
+                            className='btn-deposit btn btn-success'
+                            onClick={this.deposit}>
+                            Deposit
+                        </button>
 
-                        <button className='btn-withdraw btn btn-danger' onClick={this.withdraw} >Withdraw</button>
+                        <button
+                            className='btn-withdraw btn btn-danger'
+                            onClick={this.withdraw} >
+                            Withdraw
+                        </button>
                     </div>
                 </div>
             </div>

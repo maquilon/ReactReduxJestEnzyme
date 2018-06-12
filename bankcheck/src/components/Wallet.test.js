@@ -3,11 +3,12 @@ import { shallow } from 'enzyme';
 import { Wallet } from './Wallet';
 
 describe('Wallet', () => {
-    const mockDeposit = jest.fn();
+    const mockDeposit  = jest.fn();
     const mockWithdraw = jest.fn();
-    const props = { balance: 20, deposit: mockDeposit, withdraw: mockWithdraw };
+    const props  = { balance: 20, deposit: mockDeposit, withdraw: mockWithdraw };
     const wallet = shallow(<Wallet {...props} />);
 
+    // This test checks that the component renders correctly.
     it('renders properly', () => {
         expect(wallet).toMatchSnapshot();
     });
@@ -16,10 +17,12 @@ describe('Wallet', () => {
         expect(wallet.find('.balance').text()).toEqual('Wallet Balance: 20');
     });
 
+    // Check if the input control is existing on the UI.
     it('creates an input to deposit into or withdraw from the balance', () => {
         expect(wallet.find('.input-wallet').exists()).toBe(true);
     });
 
+    
     describe('when the user types into the wallet input', () => {
         const userBalance = '25';
 
@@ -37,7 +40,7 @@ describe('Wallet', () => {
 
             it('dispatches the `deposit()` it receives from props with local balance', () => {
                 expect(mockDeposit).toHaveBeenCalledWith(parseInt(userBalance, 10));
-            })
+            });
         });
 
         describe('and the user wants to make a withdraw', () => {
@@ -45,10 +48,9 @@ describe('Wallet', () => {
 
             it('dispatches the `withdraw()` it receives from props with local balance', () => {
                 expect(mockWithdraw).toHaveBeenCalledWith(parseInt(userBalance, 10))
-            })
-        })
+            });
+        });
+
     });
 
 });
-
-
