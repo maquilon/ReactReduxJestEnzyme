@@ -8,7 +8,7 @@ const App = () => {
             <h2>Bank Account</h2>
             <hr />
             <Wallet />
-            <hr />
+
             <Money />
         </div>
     )

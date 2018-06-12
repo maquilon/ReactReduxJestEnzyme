@@ -17,7 +17,7 @@ export class Money extends Component {
 
     render() {
         return (
-            <h3 style={{ marginTop: 50 }}>Bitcoin balance: {this.computeBitcoin()}</h3>
+            <h3 style={{ marginTop: 70 }}>Bitcoin balance: {this.computeBitcoin()}</h3>
         )
     }
 }
