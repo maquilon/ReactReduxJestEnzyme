@@ -18,12 +18,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <h2
+          className="title"
+>
           Bank Account
 </h2>,
         <hr />,
         <Connect(Wallet) />,
-        <hr />,
         <Connect(Money) />,
       ],
     },
@@ -35,6 +36,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Bank Account",
+          "className": "title",
         },
         "ref": null,
         "rendered": "Bank Account",
@@ -61,15 +63,6 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "hr",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "class",
         "props": Object {},
         "ref": null,
@@ -86,12 +79,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <h2
+            className="title"
+>
             Bank Account
 </h2>,
           <hr />,
           <Connect(Wallet) />,
-          <hr />,
           <Connect(Money) />,
         ],
       },
@@ -103,6 +97,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Bank Account",
+            "className": "title",
           },
           "ref": null,
           "rendered": "Bank Account",
@@ -125,15 +120,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "hr",
         },
         Object {
           "instance": null,

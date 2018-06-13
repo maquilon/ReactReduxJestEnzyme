@@ -5,7 +5,7 @@ import Money from './Money';
 const App = () => {
     return (
         <div>
-            <h2>Bank Account</h2>
+            <h2 className='title'>Bank Account</h2>
             <hr />
             <Wallet />
 
