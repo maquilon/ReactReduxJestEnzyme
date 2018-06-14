@@ -10,6 +10,7 @@ describe('Money', () => {
         expect(money).toMatchSnapshot();
     });
 
+    // To check that the API has been called
     describe('when mounted', () => {
         const mockFetchbitcoin = jest.fn();
 

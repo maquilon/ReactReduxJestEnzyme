@@ -10,10 +10,18 @@ describe('App', () => {
         expect(app).toMatchSnapshot();
     });
 
+
     // To check the title
     it('display title', () => {
         expect(app.find('.title').text()).toEqual('Bank Account');
     })
+
+    it('display title 2', () => {
+        expect(app.find('.title').text()).toContain('Bank Account');
+        //expect(money.find('h3').text()).toEqual('Bitcoin balance: 0.01');
+    })
+
+
 
     // This test checks that the component is connected to the redux store.
     it('contains a Connected Wallet component', () => {
